@@ -22,14 +22,14 @@ public class action_class {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 		
-		driver.findElement(By.linkText("Accept Cookies")).click();
+		//driver.findElement(By.linkText("Accept Cookies")).click();
 		String check=driver.findElement(By.linkText("Solutions")).getText();
 		System.out.println(check);
 		
 		driver.findElement(By.linkText("Solutions")).click();
 		WebElement solutions=driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul/li[1]/a"));
 		Actions act=new Actions(driver);
-		act.moveToElement(solutions);
+		act.moveToElement(solutions).build().perform();
 	}
 
 }
