@@ -22,7 +22,7 @@ public class TakingScreenshot {
 		
 		File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
-		Files.copy(srcFile, new File("C:\\Users\\User\\Documents\\SS\\photo2.jpg"));
+		Files.copy(srcFile, new File("C:\\Users\\User\\eclipse-workspace\\Automation\\photo2.jpg"));
 
 	}
 }
