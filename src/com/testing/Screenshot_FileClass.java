@@ -10,21 +10,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.google.common.io.Files;
 
-public class RobotClass {
+public class Screenshot_FileClass {
 
 	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
 		
-		
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\User\\Documents\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\User\\Documents\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.navigate().to("https://www.amazon.com");
+		driver.get("https://www.netflix.com");
 		
-		File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		
-		Files.copy(srcFile, new File("C:\\Users\\User\\Documents\\SS\\photo.jpg"));
-		
+		File myfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(myfile, new File("C:\\Users\\User\\Documents\\SS\\Image.png"));
 
 	}
 
