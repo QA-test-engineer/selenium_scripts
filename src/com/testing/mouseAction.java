@@ -15,6 +15,7 @@ public class mouseAction {
 				"C:\\Users\\User\\Documents\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		
 		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.navigate().to("https://demoqa.com/buttons");
 
 		WebElement button=driver.findElement(By.id("rightClickBtn"));

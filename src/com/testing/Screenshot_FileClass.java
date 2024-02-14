@@ -21,7 +21,7 @@ public class Screenshot_FileClass {
 		
 		File myfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		Files.copy(myfile, new File("C:\\Users\\User\\Documents\\SS\\Image.png"));
-
+		
 	}
 
 }

@@ -21,21 +21,26 @@ public class robotAPI_keyboard {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
 		Robot robot=new Robot();
 		robot.keyPress(KeyEvent.VK_DOWN);
+		robot.keyRelease(KeyEvent.VK_DOWN);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		//robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyPress(KeyEvent.VK_ENTER);
 	}
 
 }
