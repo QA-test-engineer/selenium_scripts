@@ -39,8 +39,7 @@ public class windowTabHandling {
 		driver.findElement(By.id("name")).sendKeys("QA Engineer");
 		
 		Thread.sleep(9000);
-		
-		
+				
 	}
-
+	
 }

@@ -14,8 +14,7 @@ public class popUp2 {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
-		
-		
+				
 		Thread.sleep(3000);
 		driver.findElement(By.name("proceed")).click();
 		
