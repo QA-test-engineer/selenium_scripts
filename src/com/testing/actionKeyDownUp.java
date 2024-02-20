@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class actionKeyDownUp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\User\\Documents\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");     
@@ -21,8 +21,9 @@ public class actionKeyDownUp {
 		driver.manage().window().maximize();
 		driver.get("https://bugbug.io/blog/software-testing/best-selenium-practice-websites/");
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
+		Thread.sleep(4000);
 		//Accepting cookies option
 		driver.findElement(By.xpath("//button[text()='Accept']")).click();
 		

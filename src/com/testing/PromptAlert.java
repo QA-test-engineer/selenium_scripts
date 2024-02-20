@@ -29,7 +29,7 @@ public class PromptAlert {
 		promptAlert.accept();
 		
 		System.out.println(driver.findElement(By.xpath("//div[@id='output']")).getText());
-
+		
 	}
 
 }
