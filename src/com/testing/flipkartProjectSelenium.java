@@ -82,11 +82,19 @@ public class flipkartProjectSelenium {
 				Thread.sleep(2000);
 				driver.close();
 				
-				driver.switchTo().window(parentWindow);
-				Thread.sleep(2000);
-				driver.close();
 			}
-		}		
+		}
+		
+		driver.switchTo().window(parentWindow);
+		
+		Thread.sleep(2000);
+		WebElement loginOption=driver.findElement(By.xpath("//a[text()='Mobiles' and @class='_2whKao']"));
+		Actions scroll=new Actions(driver);
+		scroll.scrollToElement(loginOption).build().perform();
+		
+		
+		Thread.sleep(2000);
+		driver.close();
 		
 	}
 
